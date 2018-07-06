@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+/*
+@import url(googleapis_font.css);
+*/
+
+body,
+html {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: auto;
+    overflow-x: hidden;
+	font-family: 'Lato', sans-serif; 
+    /*font-family: 'Arvo', serif; */
+    color: #6f6f6f;
+}
+::-webkit-scrollbar { width: 2px;  }/* for vertical scrollbars */
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
+
+@media (min-width: 1200px) { 
+    .container { width: 1100px }
+}
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h1 small { text-transform: lowercase }
+
+h2 {
+    line-height: 24px;
+    font-weight: 300;
+}
+.h2_2{
+	 color:#FF00FF;
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5 { font-size: 16px }
+
+p { font-size: 14px }
+
+a {
+    color: inherit;
+    transition: all 0.5s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #ffcc33;
+}
+.yellow { color: #F3D722 } /*Text Highlight Color*/
+.highlight { color: #ffcc33 } /*Text Highlight Color*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block }
+* html .clearfix { height: 1% }
+.clearfix { display: block }
+
+/* Navigation Bar Attributes */
+#main_navigation {
+    margin-bottom: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    height: auto;
+}
+
+.navbar-brand img {
+    height: 20px;
+    width: auto;
+	color: #ffcc33;
+}
+.navbar-brand { padding: 12px 15px }
+.navbar-nav > li > a {
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    padding: 5px 5px;
+    margin: 8px 10px;
+    text-transform: uppercase;
+    transition: all 0.5s; 
+}
+
+.navbar-default .navbar-nav > li > a.active,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	 	color: #000;			/*Menu text color to change during mouse hover over menus */
+    border-bottom: 4px solid #ffcc33;  /*Underline color change during mouse hover over the menus*/
+}
+.navbar-default .navbar-toggle { 
+	border-color: transparent;
+  /*	background-color: #ffcc33; */ /* Color of Navigation Menu(menu with 3 lines) on Small Screen */
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus 
+{
+	 background-color: transparent;
+}
+.navbar-default .navbar-toggle:hover>.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:focus>.navbar-default .navbar-toggle .icon-bar { color: #ffcc33 }
+
+/*Navigation Menu Text Color*/
+.nav.navbar-nav.navbar-right li a {
+}
+
+/*Change Navbar Background Color*/
+.navbar-default {
+  background-image: none;
+	background-color: #FFFFFF; 
+	color: #FFFFFF;
+}
+
+/*Change Navbar Background Color (Only Menu Section)*/
+/*
+.navbar-nav{
+	 background-color: transparent; 
+	 color: #FFFFFF;
+}
+*/
+
+
+/*Fav Colors
+	F0A10F - Orange
+	ffcc33 - Yellow
+	
+*Change Navbar Background Color/

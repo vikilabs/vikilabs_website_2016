@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://jsfiddle.net/zessx/drSbw/ -->
+<html slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.">
+    <meta name="keywords" content="online javascript editor, testing javascript online, online ide, online code editor, html, css, coffeescript, scss online editor">
+    <meta name="author" content="JSFiddle">
+    <meta name="copyright" content="share alike">
+
+    
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+    
+
+    
+
+    
+      <meta name="google-site-verification" content="9m4aWTtDLfQ1kJNm3NtNsCrtpsOx_QoOPQRJ7jAwup8">
+    
+
+    <!--meta name="viewport" content="width=device-width, maximum-scale=0.5" /-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+    
+      <script type="text/javascript" async="" src="./SO 18529274 - JSFiddle_files/wafdmsew"></script><script async="" src="./SO 18529274 - JSFiddle_files/prum.min.js"></script><script async="" src="./SO 18529274 - JSFiddle_files/analytics.js"></script><script type="text/javascript" src="./SO 18529274 - JSFiddle_files/_dist-editor.js"></script>
+
+    
+    
+    <link rel="stylesheet" type="text/css" href="./SO 18529274 - JSFiddle_files/_dist-editor.css">
+
+
+    
+      <link rel="stylesheet" type="text/css" href="./SO 18529274 - JSFiddle_files/light.css">
+
+    
+
+    
+      <script type="text/javascript">
+        var fiddleOptions = {
+          example_id: "259410457",
+          exampleURL: "//jsfiddle.net/zessx/drSbw/",
+          slug: "drSbw"
+        };
+        var csspath = "/css/",
+          jspath = "/js/",
+          imgpath = "/img/",
+          mediapath = "/mooshellmedia/",
+          codemirrorpath = "/codemirror/",
+          panel_html = 'html',
+          panel_css = 'scss',
+          panel_js = 'javascript',
+          makefavouritepath = "/_make_favourite/",
+          example_server = "//jsfiddle.net",
+          username = "",
+          static_hash = "update_05_01_2016_1",
+          csrfToken = Cookie.read('csrftoken'),
+          editor_save = "",
+          mooshell,
+          preload_resources;
+
+        
+
+        Layout.skin = "light";// "light"
+        window.addEvent('domready', function() {
+          if (panel_js != 'javascript' && $('jslint')) {
+            $('jslint').getParent('li').hide();
+          }
+
+          $extend(Layout, new Events());
+          mooshell = new MooShellActions({
+            example_id: fiddleOptions.example_id,
+            exampleURL: fiddleOptions.exampleURL,
+            exampleSaveUrl: '/_save/',
+            // sendCallbackURL: '',
+            loadDependenciesURL: '/_get_dependencies/{lib_id}/',
+            loadLibraryVersionsURL: '/_get_library_versions/{group_id}/'
+          });
+          new MooShellEditor.JS(document.id('id_code_js'), {
+            language: panel_js
+          }); // add user defined parameters
+          new MooShellEditor.HTML(document.id('id_code_html'), {
+            language: panel_html
+          }); // add user defined parameters
+          new MooShellEditor.CSS(document.id('id_code_css'), {
+            language: panel_css
+          }); // add user defined parameters
+          Layout.render();
+
+          
+
+          // show editors and content when the last editor loads
+          // this will prevent flickering, plus looks nice
+          document.id('content').setStyle('opacity', 1);
+
+          // always keep this at the bottom
+          $$('select.panelChoice').each(function(sel) {
+            this.switchLanguage(sel);
+          }, mooshell);
+        });
+      </script>
+
+      
+    
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-366077-13', 'auto');
+  ga('send', 'pageview', '/[user]/[fiddle]/'); // where `url_structure` is for example `/[user]/[fiddle]/[revision]/embedded/js,css/`
+</script>
+
+      
+        <script>
+          var _prum = [['id', '526a363eabe53df827000000'], ['mark', 'firstbyte', (new Date()).getTime()]];
+          (function() {
+            var s = document.getElementsByTagName('script')[0]
+              , p = document.createElement('script');
+            p.async = 'async';
+            p.src = '//rum-static.pingdom.net/prum.min.js';
+            s.parentNode.insertBefore(p, s);
+          })();
+        </script>
+        
+
+
+  <script>
+    window.intercomSettings = {
+      app_id: "wafdmsew"
+    };
+  </script>
+
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/wafdmsew';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+        
+      
+    
+
+    <link rel="icon" href="http://jsfiddle.net/favicon.png">
+    <link href="./SO 18529274 - JSFiddle_files/css" rel="stylesheet" type="text/css">
+    <link href="./SO 18529274 - JSFiddle_files/css(1)" rel="stylesheet" type="text/css">
+
+    <title>SO 18529274 - JSFiddle</title>
+  <script id="_carbonads_projs" type="text/javascript" src="./SO 18529274 - JSFiddle_files/C6AILKT.json"></script><script type="text/javascript" src="./SO 18529274 - JSFiddle_files/saved_resource"></script></head>
+  <body>
+    <h1>Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.</h1>
+    <h2>online javascript editor, testing javascript online, online ide, online code editor, html, css, coffeescript, scss online editor</h2>
+    <form method="post" id="show-result" target="result" action="./SO 18529274 - JSFiddle_files/saved_resource.html">
+      
+      
+      <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="tqriMAHQfL5ZYq0LjKxV5RgYzarTirET"></div>
+      <div id="header">
+        <div id="branding">
+          <p id="name" class="changelog-badge"><a title="JSFiddle " href="http://jsfiddle.net/" id="home" class="drop-target">JSFiddle</a><span id="HW_badge_cont" style="display: block; height: 32px; width: 32px; cursor: pointer;"><span id="HW_badge" style="display: block; border-radius: 20px; height: 16px; width: 16px; color: rgb(255, 255, 255); text-align: center; line-height: 16px; font-size: 11px; font-weight: bold; cursor: pointer; position: absolute; top: 8px; left: 8px; transform: scale(1); transition: all 0.3s; background: rgb(205, 75, 91);">4</span></span></p>
+        </div>
+        
+          <div id="actions">
+  <nav class="actionCont collapsed">
+    <div class="actionItem">
+      <a class="aiButton" id="run" title="Run (CTRL + Return)" href="http://jsfiddle.net/zessx/drSbw/#run"><i class="bts bt-play"></i>Run</a>
+    </div>
+
+    
+    
+
+    
+    
+      <div class="actionItem hidden">
+        <a class="aiButton" id="savenew" title="Save new Fiddle (CTRL + S)" href="http://jsfiddle.net/zessx/drSbw/#save"><i class="bts bt-pencil"></i>Save</a>
+      </div>
+      <div class="actionItem visible">
+        <a class="aiButton" id="update" title="Update (CTRL + S)" href="http://jsfiddle.net/zessx/drSbw/#update"><i class="bts bt-pencil"></i>Update</a>
+      </div>
+      <div class="actionItem visible">
+        <a class="aiButton" id="fork" title="Fork into a new Fiddle" href="http://jsfiddle.net/zessx/drSbw/#fork"><i class="bts bt-fork"></i>Fork</a>
+      </div>
+    
+
+    
+
+    <div class="actionItem">
+      <a class="aiButton" id="tidy" title="Tidy messy code" href="http://jsfiddle.net/zessx/drSbw/#tidy"><i class="bts bt-align-left"></i>Tidy</a>
+    </div>
+    <!-- <div class="actionItem">
+      <a class="aiButton" id="showjscode" title="Show JavaScript code" href="#showjs"><i class="bts bt-code"></i>Show JS</a>
+    </div -->
+    <div class="actionItem">
+      <a class="aiButton" id="collaborate" title="Collaborate on code" href="http://jsfiddle.net/zessx/drSbw/#collaborate"><i class="bts bt-commenting"></i>Collaborate</a>
+    </div>
+  </nav>
+
+  
+  
+
+  <ul class="actionCont dropdown">
+    <li class="actionItem visible">
+      <a class="aiButton dropdownTrigger" id="share" title="Embed this Fiddle" href="http://jsfiddle.net/zessx/drSbw/#embed">Embed<i class="bts bt-angle-down rightIcon"></i></a>
+      <div class="dropdownCont center">
+        <div class="dcWrapper embed">
+
+          <div id="creator">
+            <section>
+              <h3>Tabs:</h3>
+              <div class="inlineFields">
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="checkbox" name="tabs" value="js" checked="">
+                  <span class="checkbox"><i class="bts bt-check"></i></span> JavaScript
+                </label>
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="checkbox" name="tabs" value="html" checked="">
+                  <span class="checkbox"><i class="bts bt-check"></i></span> HTML
+                </label>
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="checkbox" name="tabs" value="css" checked="">
+                  <span class="checkbox"><i class="bts bt-check"></i></span> CSS
+                </label>
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="checkbox" name="tabs" value="result" checked="">
+                  <span class="checkbox"><i class="bts bt-check"></i></span> Result
+                </label>
+              </div> <!-- /inlineFields -->
+            </section>
+
+            <section class="noborder">
+              <h3>Visual:</h3>
+              <div class="inlineFields">
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="radio" name="skin" value="light" checked="">
+                  <span class="radio"></span> Light
+                </label>
+                <label class="inputCont_checkbox checkboxCont">
+                  <input type="radio" name="skin" value="dark">
+                  <span class="radio"></span> Dark
+                </label>
+              </div> <!-- /inlineFields -->
+              <label class="inputCont_text">
+                <input type="text" name="accentColor" maxlength="6" placeholder="Accent color">
+              </label>
+              <label class="inputCont_text">
+                <input type="text" name="fontColor" maxlength="6" placeholder="Font color">
+              </label>
+              <label class="inputCont_text">
+                <input type="text" name="menuColor" maxlength="6" placeholder="Menu background">
+              </label>
+              <label class="inputCont_text">
+                <input type="text" name="bodyColor" maxlength="6" placeholder="Code background">
+              </label>
+            </section>
+
+            <section class="noborder">
+              <h3>Embed code <a href="http://jsfiddle.net/zessx/drSbw/#" class="codeTypeToggle">Prefer iframe?</a>:</h3>
+              <div class="embedCodeWrap">
+<textarea class="embedCode" id="share_embedded_dropdown" data-view="embed" data-pattern-value="&lt;script async src=&quot;{embedSrc}&quot;&gt;&lt;/script&gt;">&lt;script async src="{embedSrc}"&gt;&lt;/script&gt;
+</textarea>
+              </div> <!-- /embedCodeWrap -->
+
+              <div class="embedCodeWrap hidden">
+<textarea class="embedCode" data-view="embedded" data-pattern-value="&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;{embedSrc}&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;">&lt;iframe width="100%" height="300" src="{embedSrc}" allowfullscreen="allowfullscreen" frameborder="0"&gt;&lt;/iframe&gt;
+</textarea>
+                <p><strong>No autoresizing</strong> to fit the code</p>
+                <p><strong>Render blocking</strong> of the parent page</p>
+              </div> <!-- /embedCodeWrap -->
+            </section>
+          </div> <!-- /creator -->
+
+          <div id="preview"></div> <!-- /preview -->
+
+        </div> <!-- /dcWrapper -->
+      </div> <!-- /dropdownCont -->
+    </li> <!-- /actionItem -->
+  </ul> <!-- /actionCont -->
+
+
+  
+<ul class="actionCont dropdown right">
+  <li class="actionItem hidden draftTriggerCont">
+    <a class="aiButton dropdownTrigger applyDraft" href="http://jsfiddle.net/zessx/drSbw/#">
+      <i class="bts bt-flag"></i>Your fiddle has an unsaved draft
+    </a>
+    <div class="dropdownCont">
+      <div class="dcWrapper diffCont">
+        <h4>Diff between the <strong>saved</strong> and <strong>locally drafted</strong> fiddle:</h4>
+        <div class="diffPanels">
+          <div class="diffWrap" id="diff-html"></div>
+          <div class="diffWrap" id="diff-js"></div>
+          <div class="diffWrap" id="diff-css"></div>
+        </div><!-- /diffCont -->
+        <p><a class="apply" href="http://jsfiddle.net/zessx/drSbw/#" id="apply-draft">Apply local draft version</a> or <a href="http://jsfiddle.net/zessx/drSbw/#" id="discard-draft">discard it</a></p>
+      </div><!-- /actionItem -->
+    </div><!-- /dcWrapper -->
+  </li> <!-- /actionItem -->
+
+  <li class="actionItem">
+    <a class="aiButton dropdownTrigger" href="http://jsfiddle.net/zessx/drSbw/#editor-options">
+      <i class="bts bt-gear"></i>Settings
+      <i class="bts bt-angle-down rightIcon"></i>
+    </a>
+    <div class="dropdownCont" style="display: none;">
+      <div class="dcWrapper" id="editor-options">
+        <p>
+          <label class="checkboxCont">
+            <input type="checkbox" name="autoCloseTags" checked="">
+            <span class="checkbox"><i class="bts bt-check"></i></span>
+            Auto-close HTML tags
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input type="checkbox" name="lineNumbers" checked="">
+            <span class="checkbox"><i class="bts bt-check"></i></span>
+            Show line numbers
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input type="checkbox" name="lineWrapping" checked="">
+            <span class="checkbox"><i class="bts bt-check"></i></span>
+            Enable line wrapping
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input type="checkbox" name="indentWithTabs">
+            <span class="checkbox"><i class="bts bt-check"></i></span>
+            Indent with tabs
+          </label>
+        </p>
+
+        <div class="selectPair">
+          <span class="label">Indent size:</span>
+          <div class="selectCont">
+            <select name="indentUnit">
+              <option value="2">2 spaces</option>
+              <option value="3">3 spaces</option>
+              <option value="4">4 spaces</option>
+            </select>
+            <label><i class="bts bt-angle-down"></i></label>
+          </div> <!-- /selectCont -->
+        </div> <!-- /selectPair -->
+
+        <div class="selectPair">
+          <span class="label">Key map:</span>
+          <div class="selectCont">
+            <select name="keyMap">
+              <option value="default">Default</option>
+              <option value="sublime">Sublime Text</option>
+              <option value="vim">VIM</option>
+              <option value="emacs">EMACS</option>
+            </select>
+            <label><i class="bts bt-angle-down"></i></label>
+          </div> <!-- /selectCont -->
+        </div> <!-- /selectPair -->
+      </div>
+    </div>
+  </li> <!-- /actionItem -->
+  
+    <li class="actionItem noIcon"><a class="aiButton" id="login" title="Login" href="http://jsfiddle.net/user/login/"><i class="bts bt-smile"></i>Sign in</a></li>
+  
+</ul>
+
+</div>
+
+        
+        <div id="progressbar"><div class="pb"></div></div>
+      </div>
+
+      
+        <div id="sidebar">
+          
+  
+  <h3 id="author_toggler" class="toggler active">Fiddle Author</h3>
+  <div class="element">
+    <div class="elementBody" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; opacity: 1; height: auto;">
+      <div class="ebCont">
+        <div class="avatar">
+          <img src="./SO 18529274 - JSFiddle_files/saved_resource(1)" height="40" width="40">
+          <a title="See public fiddles" href="http://jsfiddle.net/user/zessx/fiddles/">
+            
+              zessx
+            
+          </a>
+          
+        </div> <!-- /avatar -->
+
+        <ul class="userDetails">
+          
+          
+            <li><i class="fab fab-twitter"></i><a href="https://twitter.com/zessx" target="_blank">zessx</a></li>
+          
+          
+            <li><i class="fab fab-github"></i><a href="https://github.com/zessx" target="_blank">zessx</a></li>
+          
+        </ul> <!-- /userDetails -->
+      </div> <!-- /ebCont -->
+    </div> <!-- /elementBody -->
+  </div> <!-- /element -->
+
+
+          <h3 id="about_toggler" class="toggler">Fiddle Meta</h3>
+<div class="element">
+  <div class="elementBody" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; opacity: 0; height: 0px;">
+    <div class="ebCont">
+      <p>
+        <label>
+          <input id="id_title" type="text" name="title" maxlength="255" value="SO 18529274" placeholder="Untitled fiddle">
+        </label>
+      </p>
+      <p>
+        <label>
+          <textarea id="id_description" rows="10" cols="40" name="description" placeholder="No description">http://stackoverflow.com/q/18529274/1238019</textarea>
+        </label>
+      </p>
+      <p class="metaInfo">Add title to make the fiddle public.</p>
+    </div>
+  </div>
+</div>
+
+          
+
+<h3 class="toggler filled" id="resources_toggler">
+  External Resources <em>2</em>
+</h3>
+
+
+<div class="element" id="resources_element">
+  <div class="elementBody" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; opacity: 0; height: 0px;">
+    <div class="ebCont">
+      <div id="external-resources-form">
+        <input id="external_resource" type="text" value="" placeholder="JavaScript/CSS URI">
+        <a id="add_external_resource" class="submit" href="http://jsfiddle.net/zessx/drSbw/#" title="Add resource"><i class="bts bt-plus-circle"></i></a>
+      </div>
+      <input type="hidden" value="300462,300496" id="external_resources_id" name="add_external_resources">
+
+      <ul id="external_resources_list">
+      <script type="text/javascript">var resources = [];</script>
+      
+        <li id="external_resource_300462">
+          <a class="filename" target="_blank" href="./SO 18529274 - JSFiddle_files/bootstrap.min.css" title="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+            bootstrap.min.css
+          </a>
+          <a onclick="remove_resource(300462)" class="remove">
+            <i class="bts bt-minus-circle"></i>
+          </a>
+        </li>
+        <script type="text/javascript">resources.push(300462)</script>
+      
+        <li id="external_resource_300496">
+          <a class="filename" target="_blank" href="./SO 18529274 - JSFiddle_files/bootstrap.min.js" title="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js">
+            bootstrap.min.js
+          </a>
+          <a onclick="remove_resource(300496)" class="remove">
+            <i class="bts bt-minus-circle"></i>
+          </a>
+        </li>
+        <script type="text/javascript">resources.push(300496)</script>
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var default_text = 'JavaScript/CSS URL',
+      add_external_resource_url = "/_add_external_resource/";
+</script>
+
+          <h3 class="toggler">AJAX Requests</h3>
+<div class="element">
+  <div class="elementBody" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; opacity: 0; height: 0px;">
+    <div class="ebCont">
+
+      <p><code>/echo</code> simulates AJAX calls:<br>
+        JSON: <code>/echo/json/</code><br>
+        JSONP: <code>//jsfiddle.net/echo/jsonp/</code><br>
+        HTML: <code>/echo/html/</code><br>
+        XML: <code>/echo/xml/</code>
+      </p>
+      <p>See <a href="http://doc.jsfiddle.net/use/echo.html" target="_new">docs</a> for more info.</p>
+    </div>
+  </div>
+</div>
+
+          
+          <h3 class="toggler">Legal, Credits and Links</h3>
+<div class="element">
+  <div class="elementBody" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; opacity: 0; height: 0px;">
+    <div class="ebCont">
+      <!-- <p>Created and maintained by <a title="Piotr's homepage" href="http://twitter.com/zalun" target="_blank">Piotr</a> and <a title="UX and UI Designer" href="https://twitter.com/oskar" target="_blank">Oskar</a>.</p> -->
+      <p>Hosted by <a href="https://www.digitalocean.com/" target="_credits"><strong>DigitalOcean</strong></a></p>
+      <!-- <p>Powered by <a href="http://customer.io/" target="_credits"><strong>Customer.io</strong></a></p> -->
+      <!-- <p>Special thanks to <a href="http://mootools.net" target="_blank">MooTools</a> community.</p> -->
+      <p><strong>License</strong></p>
+      <p>All code belongs to the poster and no license is enforced.</p>
+      <p>JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.</p>
+      <p><strong>Links</strong></p>
+      <p>
+        <a href="http://doc.jsfiddle.net/" target="_blank">Docs</a><br>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+          
+            <div class="twitterCont">
+              <script async="" type="text/javascript" src="./SO 18529274 - JSFiddle_files/carbon.js" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="http://headwayapp.co/" class="carbon-img" target="_blank"><img src="./SO 18529274 - JSFiddle_files/a275022a20c8269d33f59636f9bd945c.png" alt="" border="0" height="100" width="130" style="max-width:130px;"></a><a href="http://headwayapp.co/" class="carbon-text" target="_blank">Every change counts. Make sure your users know about them.</a></span></span></div>
+            </div>
+          
+        </div>
+        <div id="content" style="height: 666px; opacity: 1;">
+          
+          
+
+
+<input type="hidden" name="version" value="3341" id="id_version">
+<input type="hidden" id="id_slug" name="slug" value="drSbw">
+
+<fieldset class="column left" style="width: 16.1238%;">
+  <div class="window top" id="panel_html" data-panel_type="html">
+    <textarea id="id_code_html" rows="10" cols="40" name="code_html" style="display: none;">&lt;nav class="navbar navbar-default" role="navigation"&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+      &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+  &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+    &lt;ul class="nav navbar-nav"&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="dropdown"&gt;
+        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="divider"&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="divider"&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class="navbar-form navbar-left" role="search"&gt;
+      &lt;div class="form-group"&gt;
+        &lt;input type="text" class="form-control" placeholder="Search"&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;ul class="nav navbar-nav navbar-right"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="dropdown"&gt;
+        &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="divider"&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/nav&gt;
+    
+&lt;a href="http://stackoverflow.com/q/18529274/1238019" class="solink" target="_blank"&gt;Change navbar color in Twitter Bootstrap 3&lt;/a&gt;</textarea>
+    <a href="http://jsfiddle.net/zessx/drSbw/#" class="windowLabel" data-panel="html">
+      <span class="label">HTML</span><i class="bts bt-gear"></i>
+    </a>
+  <div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 157px; left: 104px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 2060px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 35px; margin-bottom: 0px; border-right-width: 30px; min-height: 2060px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 11px; top: 828px; width: 58px; height: 18px;"></div></div><div class="CodeMirror-cursors" style="visibility: hidden;"></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">nav</span> <span class="cm-attribute">class</span>=<span class="cm-string">"navbar navbar-default"</span> <span class="cm-attribute">role</span>=<span class="cm-string">"navigation"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"navbar-header"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">type</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"navbar-toggle"</span> <span class="cm-attribute">data-toggle</span>=<span class="cm-string">"collapse"</span> <span class="cm-attribute">data-target</span>=<span class="cm-string">"#bs-example-navbar-collapse-1"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"sr-only"</span><span class="cm-tag cm-bracket">&gt;</span>Toggle navigation<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"icon-bar"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"icon-bar"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"icon-bar"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"navbar-brand"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Brand<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"collapse navbar-collapse"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"bs-example-navbar-collapse-1"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">class</span>=<span class="cm-string">"nav navbar-nav"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span> <span class="cm-attribute">class</span>=<span class="cm-string">"active"</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Link<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Link<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span> <span class="cm-attribute">class</span>=<span class="cm-string">"dropdown"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"dropdown-toggle"</span> <span class="cm-attribute">data-toggle</span>=<span class="cm-string">"dropdown"</span><span class="cm-tag cm-bracket">&gt;</span>Dropdown <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">b</span> <span class="cm-attribute">class</span>=<span class="cm-string">"caret"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">b</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">class</span>=<span class="cm-string">"dropdown-menu"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Action<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Another action<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Something else here<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span> <span class="cm-attribute">class</span>=<span class="cm-string">"divider"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>Separated link<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span> <span class="cm-attribute">class</span>=<span class="cm-string">"divider"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#"</span><span class="cm-tag cm-bracket">&gt;</span>One more separated link<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 2060px;"></div><div class="CodeMirror-gutters" style="height: 2090px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div></div>
+  <div class="handler handler_horizontal" style="top: 168px;"></div>
+  <div class="window bottom" id="panel_js" data-panel_type="javascript">
+    <textarea id="id_code_js" rows="10" cols="40" name="code_js" style="display: none;"></textarea>
+    <a href="http://jsfiddle.net/zessx/drSbw/#" class="windowLabel" data-panel="js">
+      <span class="label">JavaScript</span><i class="bts bt-gear"></i>
+    </a>
+  <div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 39px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 35px; margin-bottom: 0px; border-right-width: 30px; min-height: 26px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 18px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 26px;"></div><div class="CodeMirror-gutters" style="height: 530px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div></div>
+  <div class="shim" style="display: none;"></div>
+</fieldset>
+
+<div class="handler" id="handler_vertical" style="left: 199px;"></div>
+
+<fieldset class="column right" style="width: 83.8762%;">
+  <div class="window top" id="panel_css" data-panel_type="scss">
+    <textarea id="id_code_css" rows="10" cols="40" name="code_css" style="display: none;">/* Red */
+$bgDefault      : #e74c3c;
+$bgHighlight    : #c0392b;
+$colDefault     : #ecf0f1;
+$colHover       : #ffbbbc; 
+/* Green * /
+$bgDefault      : #2ecc71;
+$bgHighlight    : #27ae60;
+$colDefault     : #ecf0f1;
+$colHover       : #d1ffed; /*/
+/* Purple * /
+$bgDefault      : #9b59b6;
+$bgHighlight    : #8e44ad;
+$colDefault     : #ecf0f1;
+$colHover       : #ecdbff; /*/
+/* Orange * /
+$bgDefault      : #e67e22;
+$bgHighlight    : #d35400;
+$colDefault     : #ecf0f1;
+$colHover       : #ffe6d1; /*/
+
+
+/* --- Style --- */
+.navbar-default {
+    background-color: $bgDefault;
+    border-color: $bgHighlight;
+    .navbar-brand {
+        color: $colDefault;
+        &amp;:hover, &amp;:focus {
+            color: $colHover; }}
+    .navbar-nav {
+        &gt; li {
+            &gt; a {
+                color: $colDefault;
+                &amp;:hover, &amp;:focus {
+                    color: $colHover;   }}}
+        .active {
+            &gt; a, &gt; a:hover, &gt; a:focus {
+                color: $colHover;
+                background-color: $bgHighlight; }}
+        .open {
+            &gt; a, &gt; a:hover, &gt; a:focus {
+                color: $colHover;
+                background-color: $bgHighlight;
+                .caret {
+                    border-top-color: $colHover;
+                    border-bottom-color: $colHover; }}}
+        &gt; .dropdown {
+            &gt; a {
+                .caret {
+                    border-top-color: $colDefault;
+                    border-bottom-color: $colDefault; }
+                &amp;:hover, &amp;:focus {
+                    .caret {
+                        border-top-color: $colHover;
+                        border-bottom-color: $colHover; }}}}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &amp;:hover, &amp;:focus {
+            background-color: $bgHighlight; }
+        .icon-bar {
+            background-color: $colDefault; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a {
+        color: $colDefault;
+        &amp;:hover, &amp;:focus {
+            color: $colHover;
+            background-color: $bgHighlight; }}
+}
+
+/* Do not take in account */
+html{padding-top:30px}a.solink{position:fixed;top:0;width:100%;text-align:center;background:#f3f5f6;color:#cfd6d9;border:1px solid #cfd6d9;line-height:30px;text-decoration:none;transition:all .3s;z-index:999}a.solink::first-letter{text-transform:capitalize}a.solink:hover{color:#428bca}</textarea>
+    <a href="http://jsfiddle.net/zessx/drSbw/#" class="windowLabel" data-panel="css">
+      <span class="label">SCSS</span><i class="bts bt-gear"></i>
+    </a>
+  <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 59px; left: 254.953px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 1340px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 35px; margin-bottom: 0px; border-right-width: 30px; min-height: 1340px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 198px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 219.953px; top: 396px; height: 18px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$bgDefault &nbsp; &nbsp;  : #9b59b6;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$bgHighlight &nbsp;  : #8e44ad;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$colDefault &nbsp; &nbsp; : #ecf0f1;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$colHover &nbsp; &nbsp; &nbsp; : #ecdbff; /*/</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">/* Orange * /</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$bgDefault &nbsp; &nbsp;  : #e67e22;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$bgHighlight &nbsp;  : #d35400;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$colDefault &nbsp; &nbsp; : #ecf0f1;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">$colHover &nbsp; &nbsp; &nbsp; : #ffe6d1; /*/</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-comment">/* --- Style --- */</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-qualifier">.navbar-default</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$bgDefault</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">border-color</span>: <span class="cm-variable-2">$bgHighlight</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-qualifier">.navbar-brand</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-variable-2">$colDefault</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &amp;:<span class="cm-variable-3">hover</span>, &amp;:<span class="cm-variable-3">focus</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-variable-2">$colHover</span>; }}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-qualifier">.navbar-nav</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-tag">li</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-tag">a</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">34</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-atom">#000000</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">35</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &amp;:<span class="cm-variable-3">hover</span>, &amp;:<span class="cm-variable-3">focus</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">36</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-variable-2">$colHover</span>; &nbsp; }}}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">37</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-qualifier">.active</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">38</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-tag">a</span>, &gt; <span class="cm-tag">a</span>:<span class="cm-variable-3">hover</span>, &gt; <span class="cm-tag">a</span>:<span class="cm-variable-3">focus</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">39</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-variable-2">$colHover</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">40</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$bgHighlight</span>; }}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">41</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  <span class="cm-qualifier">.open</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">42</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-tag">a</span>, &gt; <span class="cm-tag">a</span>:<span class="cm-variable-3">hover</span>, &gt; <span class="cm-tag">a</span>:<span class="cm-variable-3">focus</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">43</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">color</span>: <span class="cm-variable-2">$colHover</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">44</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$bgHighlight</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">45</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-qualifier">.caret</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">46</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">border-top-color</span>: <span class="cm-variable-2">$colHover</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">47</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">border-bottom-color</span>: <span class="cm-variable-2">$colHover</span>; }}}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">48</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-qualifier">.dropdown</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">49</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &gt; <span class="cm-tag">a</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-qualifier">.caret</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">51</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">border-top-color</span>: <span class="cm-variable-2">$colDefault</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -35px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">52</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="cm-property">border-bottom-color</span>: <span class="cm-variable-2">$colDefault</span>; }</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1340px;"></div><div class="CodeMirror-gutters" style="height: 1370px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div><ul class="warningTooltip"></ul></div>
+  <div class="handler handler_horizontal" style="top: 168px;"></div>
+  <div id="result" class="window bottom">
+    <iframe name="result" sandbox="allow-forms allow-popups allow-scripts allow-same-origin allow-modals" frameborder="0" src="./SO 18529274 - JSFiddle_files/saved_resource.html"></iframe>
+    
+  </div>
+  <div class="shim" style="display: none;"></div>
+</fieldset>
+
+<div class="windowSettings html">
+  <h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_html" class="panelChoice" id="panel_html_choice" disabled="disabled" data-panel_id="id_code_html" data-panel="html">
+    
+      <option data-mime-type="text/html" value="0" selected="">HTML</option>
+    
+  </select>
+  <label for="js_lib"><i class="bts bt-angle-down"></i></label>
+</div> <!-- /selectCont -->
+
+<h3>Doctype</h3>
+<div class="selectCont">
+  <select name="doctype">
+    
+      <option id="dtd_XHTML 1.0 Strict" value="1">XHTML 1.0 Strict</option>
+    
+      <option id="dtd_XHTML 1.0 Transitional" value="2">XHTML 1.0 Transitional</option>
+    
+      <option selected="" id="dtd_HTML 5" value="3">HTML 5</option>
+    
+      <option id="dtd_HTML 4.01 Strict" value="4">HTML 4.01 Strict</option>
+    
+      <option id="dtd_HTML 4.01 Transitional" value="5">HTML 4.01 Transitional</option>
+    
+      <option id="dtd_HTML 4.01 Frameset" value="6">HTML 4.01 Frameset</option>
+    
+  </select>
+  <label for="doctype"><i class="bts bt-angle-down"></i></label>
+</div>
+
+<h3>Body tag</h3>
+<p>
+  <label>
+    <input id="id_body_tag" type="text" name="body_tag" maxlength="255">
+  </label>
+</p>
+
+</div> <!-- /windowSettings -->
+
+<div class="windowSettings js">
+  
+
+
+<h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_js" class="panelChoice" id="panel_js_choice" data-panel_id="id_code_js" data-panel="js">
+    
+      <option data-mime-type="text/javascript" value="0" selected="">JavaScript</option>
+    
+      <option data-mime-type="text/x-coffeescript" value="1">CoffeeScript</option>
+    
+      <option data-mime-type="application/javascript;version=1.7" value="2">JavaScript 1.7</option>
+    
+      <option data-mime-type="text/babel" value="3">Babel</option>
+    
+      <option data-mime-type="text/typescript" value="4">TypeScript</option>
+    
+  </select>
+  <label for="js_lib"><i class="bts bt-angle-down"></i></label>
+</div> <!-- /selectCont -->
+
+<h3>Frameworks &amp; Extensions</h3>
+
+  
+    
+<div class="selectCont">
+  <select name="js_lib" id="js_lib">
+    
+    <optgroup label="Mootools">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="59">Mootools (nightly)</option>
+      
+        <option value="261">Mootools 1.5.2 (nocompat)</option>
+      
+        <option value="263">Mootools 1.5.2</option>
+      
+        
+      
+        <option value="216">Mootools 1.5.1</option>
+      
+        
+      
+        <option value="208">Mootools 1.5.0</option>
+      
+        <option value="96">Mootools 1.4.5 (compat)</option>
+      
+        <option value="95">Mootools 1.4.5</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="63">Mootools 1.3.2 (compat)</option>
+      
+        <option value="62">Mootools 1.3.2</option>
+      
+        
+      
+        
+      
+        
+      
+        <option value="144">Mootools 1.2.6</option>
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="jQuery">
+      
+        
+      
+        
+      
+        <option value="46">jQuery (edge)</option>
+      
+        <option value="260">jQuery 3.0.0-alpha1</option>
+      
+        <option value="275">jQuery 2.1.4</option>
+      
+        <option value="248">jQuery 2.1.3</option>
+      
+        <option value="188">jQuery 2.1.0</option>
+      
+        <option value="157" selected="selected">jQuery 2.0.2</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="186">jQuery 1.11.0</option>
+      
+        <option value="156">jQuery 1.10.1</option>
+      
+        
+      
+        <option value="131">jQuery 1.9.1</option>
+      
+        <option value="112">jQuery 1.8.3</option>
+      
+        <option value="101">jQuery 1.7.2</option>
+      
+        
+      
+        
+      
+        <option value="75">jQuery 1.6.4</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Prototype">
+      
+        
+      
+        <option value="265">Prototype 1.7.3</option>
+      
+        <option value="254">Prototype 1.7.2</option>
+      
+        <option value="54">Prototype 1.7.1</option>
+      
+        <option value="4">Prototype 1.6.1.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="YUI">
+      
+        
+      
+        <option value="230">YUI 3.17.2</option>
+      
+        <option value="204">YUI 3.16.0</option>
+      
+        <option value="182">YUI 3.14.0</option>
+      
+        <option value="153">YUI 3.10.1</option>
+      
+        
+      
+        <option value="130">YUI 3.8.0</option>
+      
+        <option value="123">YUI 3.7.3</option>
+      
+        <option value="118">YUI 3.6.0</option>
+      
+        <option value="102">YUI 3.5.0</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="9">YUI 2.8.0r4</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Glow">
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="No-Library">
+      
+        <option value="11">No-Library (pure JS)</option>
+      
+    </optgroup>
+    
+    <optgroup label="Dojo">
+      
+        <option value="87">Dojo (nightly)</option>
+      
+        <option value="240">Dojo 1.10.4</option>
+      
+        
+      
+        
+      
+        <option value="242">Dojo 1.9.7</option>
+      
+        
+      
+        
+      
+        
+      
+        <option value="244">Dojo 1.8.10</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="246">Dojo 1.7.8</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="196">Dojo 1.6.2</option>
+      
+        
+      
+        
+      
+        <option value="194">Dojo 1.5.3</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Processing.js">
+      
+        <option value="206">Processing.js 1.4.7</option>
+      
+        <option value="135">Processing.js 1.4.1</option>
+      
+        <option value="81">Processing.js 1.3.6</option>
+      
+        <option value="67">Processing.js 1.2.3</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="ExtJS">
+      
+        <option value="256">ExtJS 5.1.0</option>
+      
+        <option value="258">ExtJS 5.0.0</option>
+      
+        <option value="147">ExtJS 4.2.0</option>
+      
+        <option value="80">ExtJS 4.1.1</option>
+      
+        <option value="107">ExtJS 4.1.0</option>
+      
+        
+      
+        <option value="109">ExtJS 3.4.0</option>
+      
+        <option value="23">ExtJS 3.1.0</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Raphael">
+      
+        <option value="76">Raphael 2.1.0</option>
+      
+        <option value="36">Raphael 1.5.2 (min)</option>
+      
+        <option value="30">Raphael 1.4</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="RightJS">
+      
+        <option value="136">RightJS 2.3.1</option>
+      
+        <option value="45">RightJS 2.1.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Three.js">
+      
+        <option value="82">Three.js r54</option>
+      
+    </optgroup>
+    
+    <optgroup label="Zepto">
+      
+        <option value="90">Zepto 1.0rc1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Enyo">
+      
+        <option value="115">Enyo (nightly)</option>
+      
+        <option value="238">Enyo 2.5.1</option>
+      
+        <option value="214">Enyo 2.4.0</option>
+      
+        <option value="145">Enyo 2.2.0</option>
+      
+        <option value="121">Enyo 2.1</option>
+      
+        <option value="116">Enyo 2.0.1</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Shipyard">
+      
+        <option value="99">Shipyard (nightly)</option>
+      
+        <option value="105">Shipyard 0.2</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Knockout.js">
+      
+        <option value="277">Knockout.js 3.4.0</option>
+      
+        <option value="172">Knockout.js 3.0.0</option>
+      
+        <option value="163">Knockout.js 2.3.0</option>
+      
+        <option value="122">Knockout.js 2.2.1</option>
+      
+        <option value="117">Knockout.js 2.1.0</option>
+      
+        <option value="104">Knockout.js 2.0.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="The X Toolkit">
+      
+        <option value="106">The X Toolkit edge</option>
+      
+    </optgroup>
+    
+    <optgroup label="AngularJS">
+      
+        <option value="281">AngularJS 2.0.0-alpha.47</option>
+      
+        <option value="283">AngularJS 1.4.8</option>
+      
+        <option value="180">AngularJS 1.2.1</option>
+      
+        <option value="137">AngularJS 1.1.1</option>
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Ember">
+      
+        <option value="190">Ember (latest)</option>
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Underscore">
+      
+        <option value="267">Underscore 1.8.3</option>
+      
+        <option value="160">Underscore 1.4.4</option>
+      
+        <option value="133">Underscore 1.4.3</option>
+      
+        <option value="111">Underscore 1.3.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Bonsai">
+      
+        <option value="120">Bonsai 0.4.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="KineticJS">
+      
+        <option value="139">KineticJS 4.3.1</option>
+      
+        <option value="124">KineticJS 4.0.5</option>
+      
+    </optgroup>
+    
+    <optgroup label="FabricJS">
+      
+        <option value="250">FabricJS 1.5.0</option>
+      
+        <option value="178">FabricJS 1.4.0</option>
+      
+        <option value="161">FabricJS 1.2.0</option>
+      
+        <option value="125">FabricJS 0.9</option>
+      
+    </optgroup>
+    
+    <optgroup label="qooxdoo">
+      
+        <option value="126">qooxdoo 2.1</option>
+      
+        <option value="127">qooxdoo 2.0.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="D3">
+      
+        <option value="134">D3 3.x</option>
+      
+    </optgroup>
+    
+    <optgroup label="CreateJS">
+      
+        <option value="279">CreateJS 2015.05.21</option>
+      
+        <option value="170">CreateJS 2013.09.25</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="WebApp Install">
+      
+        <option value="142">WebApp Install 0.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Thorax">
+      
+        <option value="174">Thorax 2.0.0rc6</option>
+      
+        <option value="143">Thorax 2.0.0rc3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Paper.js">
+      
+        <option value="158">Paper.js 0.22</option>
+      
+    </optgroup>
+    
+    <optgroup label="React">
+      
+        <option value="285">React 0.14.3</option>
+      
+        <option value="192">React 0.9.0</option>
+      
+        <option value="184">React 0.8.0</option>
+      
+        <option value="166">React 0.4.0</option>
+      
+        <option value="159">React 0.3.2</option>
+      
+    </optgroup>
+    
+    <optgroup label="svg.js">
+      
+        <option value="269">svg.js 2.1.1</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Minified">
+      
+        <option value="164">Minified 1.0 beta1</option>
+      
+    </optgroup>
+    
+    <optgroup label="jTypes">
+      
+        <option value="165">jTypes 2.1.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="Lo-Dash">
+      
+        <option value="167">Lo-Dash 2.2.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Brick">
+      
+        <option value="176">Brick edge</option>
+      
+    </optgroup>
+    
+    <optgroup label="RactiveJS">
+      
+        
+      
+        
+      
+        <option value="287">RactiveJS 0.7.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Vue">
+      
+        <option value="236">Vue (edge)</option>
+      
+        <option value="289">Vue 1.0.12</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="JSBlocks">
+      
+        <option value="252">JSBlocks (edge)</option>
+      
+    </optgroup>
+    
+    <optgroup label="OpenUI5">
+      
+        <option value="271">OpenUI5 (latest, mobile)</option>
+      
+    </optgroup>
+    
+    <optgroup label="MithrilJS">
+      
+        <option value="273">MithrilJS 0.2.0</option>
+      
+    </optgroup>
+    
+  </select>
+  <label for="js_lib"><i class="bts bt-angle-down"></i></label>
+</div>
+
+<ul id="js_dependency">
+  
+  <li>
+    <label class="checkboxCont">
+      <input type="checkbox" id="dep_178" name="js_dependency[178]" value="178">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      Migrate 1.2.1
+    </label>
+  </li>
+
+  <li>
+    <label class="checkboxCont">
+      <input type="checkbox" id="dep_179" name="js_dependency[179]" value="179">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      jQuery UI 1.10.3
+    </label>
+  </li>
+
+  <li>
+    <label class="checkboxCont">
+      <input type="checkbox" id="dep_180" name="js_dependency[180]" value="180">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      jQuery Mobile 1.3.1
+    </label>
+  </li>
+
+
+</ul>
+
+  
+
+
+<h3>Load type</h3>
+<div class="selectCont">
+  <select name="js_wrap" id="id_js_wrap">
+<option value="l" selected="selected">onLoad</option>
+<option value="d">onDomready</option>
+<option value="h">No wrap - in &lt;head&gt;</option>
+<option value="b">No wrap - in &lt;body&gt;</option>
+</select>
+  <label for="js_wrap"><i class="bts bt-angle-down"></i></label>
+</div>
+
+
+  <h3>Framework &lt;script&gt; attribute</h3>
+  <p class="libraryTagAttributes">
+    <label>
+      <input id="id_js_lib_option" type="text" name="js_lib_option" maxlength="255" placeholder="ie. data-type=&quot;&quot;" value="">
+    </label>
+  </p>
+
+
+<script type="text/javascript">
+  window.addEvent('load', function() {
+    $('js_lib').addEvent('change', function() {
+      mooshell.loadDependencies(this.value);
+    })
+    if ($('library_group')) $('library_group').addEvent('change', function() {
+      mooshell.loadLibraryVersions(this.value);
+    })
+  });
+</script>
+
+</div> <!-- /windowSettings -->
+
+<div class="windowSettings css" style="display: none; position: absolute; left: 892px; top: 46px;">
+  <h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_css" class="panelChoice" id="panel_css_choice" data-panel_id="id_code_css" data-panel="css">
+    
+      <option data-mime-type="text/x-scss" value="0">CSS</option>
+    
+      <option data-mime-type="text/x-scss" value="1" selected="">SCSS</option>
+    
+  </select>
+  <label for="js_lib"><i class="bts bt-angle-down"></i></label>
+</div> <!-- /selectCont -->
+
+<h3>Options</h3>
+<p id="normalize_check">
+  <label class="checkboxCont"><input type="checkbox" name="normalize_css" id="id_normalize_css"><span class="checkbox"><i class="bts bt-check"></i></span> Normalized CSS</label>
+</p>
+
+</div> <!-- /windowSettings -->
+
+        </div>
+      
+    </form>
+
+    
+
+<script>
+  TogetherJSConfig_enableAnalytics = true;
+  TogetherJSConfig_cloneClicks = "#run, .toggler";
+  TogetherJSConfig_toolName = "Collaboration"
+</script>
+<script defer="" src="./SO 18529274 - JSFiddle_files/togetherjs.js"></script>
+
+
+    
+      <script id="HW_script" data-selector=".changelog-badge" async="" src="./SO 18529274 - JSFiddle_files/widget.js"></script>
+    
+
+    
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Code",
+      "name": "SO 18529274",
+      
+      "description": "http://stackoverflow.com/q/18529274/1238019",
+      
+      "url": "//jsfiddle.net/zessx/drSbw/",
+      "dateCreated": "",
+      
+        
+        "author": {
+          "@type": "Person",
+          "name": "zessx",
+          
+          
+          "image": "//www.gravatar.com/avatar/51530b459573b9a455d3f95fde19ce9a/?default=&amp;s=80"
+        },
+      
+      "codeSampleType": [
+        {
+          "@type": "SoftwareSourceCode",
+          "programmingLanguage": "javascript",
+          "text": ""
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "programmingLanguage": "html",
+          "text": "&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/nav&gt;
+    
+&lt;a href=&quot;http://stackoverflow.com/q/18529274/1238019&quot; class=&quot;solink&quot; target=&quot;_blank&quot;&gt;Change navbar color in Twitter Bootstrap 3&lt;/a&gt;"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "programmingLanguage": "scss",
+          "text": "/* Red */
+$bgDefault      : #e74c3c;
+$bgHighlight    : #c0392b;
+$colDefault     : #ecf0f1;
+$colHover       : #ffbbbc; 
+/* Green * /
+$bgDefault      : #2ecc71;
+$bgHighlight    : #27ae60;
+$colDefault     : #ecf0f1;
+$colHover       : #d1ffed; /*/
+/* Purple * /
+$bgDefault      : #9b59b6;
+$bgHighlight    : #8e44ad;
+$colDefault     : #ecf0f1;
+$colHover       : #ecdbff; /*/
+/* Orange * /
+$bgDefault      : #e67e22;
+$bgHighlight    : #d35400;
+$colDefault     : #ecf0f1;
+$colHover       : #ffe6d1; /*/
+
+
+/* --- Style --- */
+.navbar-default {
+    background-color: $bgDefault;
+    border-color: $bgHighlight;
+    .navbar-brand {
+        color: $colDefault;
+        &amp;:hover, &amp;:focus {
+            color: $colHover; }}
+    .navbar-nav {
+        &gt; li {
+            &gt; a {
+                color: $colDefault;
+                &amp;:hover, &amp;:focus {
+                    color: $colHover;   }}}
+        .active {
+            &gt; a, &gt; a:hover, &gt; a:focus {
+                color: $colHover;
+                background-color: $bgHighlight; }}
+        .open {
+            &gt; a, &gt; a:hover, &gt; a:focus {
+                color: $colHover;
+                background-color: $bgHighlight;
+                .caret {
+                    border-top-color: $colHover;
+                    border-bottom-color: $colHover; }}}
+        &gt; .dropdown {
+            &gt; a {
+                .caret {
+                    border-top-color: $colDefault;
+                    border-bottom-color: $colDefault; }
+                &amp;:hover, &amp;:focus {
+                    .caret {
+                        border-top-color: $colHover;
+                        border-bottom-color: $colHover; }}}}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &amp;:hover, &amp;:focus {
+            background-color: $bgHighlight; }
+        .icon-bar {
+            background-color: $colDefault; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu &gt; li &gt; a {
+        color: $colDefault;
+        &amp;:hover, &amp;:focus {
+            color: $colHover;
+            background-color: $bgHighlight; }}
+}
+
+/* Do not take in account */
+html{padding-top:30px}a.solink{position:fixed;top:0;width:100%;text-align:center;background:#f3f5f6;color:#cfd6d9;border:1px solid #cfd6d9;line-height:30px;text-decoration:none;transition:all .3s;z-index:999}a.solink::first-letter{text-transform:capitalize}a.solink:hover{color:#428bca}"
+        }
+      ]
+    }
+  </script>
+
+
+
+    
+  
+
+<span class="CodeMirror-error-tooltip"></span><div id="HW_frame_cont" style="visibility: hidden; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 10px 60px 0px; border: none; position: absolute; z-index: 999; width: 300px; height: 400px; transition: height 0.3s; background: rgb(255, 255, 255);"><div id="HW_frame_peak" style="width: 20px;
+height: 20px;
+content: &quot;&quot;;
+position: absolute;
+z-index: 888;
+top: -10px;
+left: 28px;
+background: #fff;
+box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.3);
+transform: rotate(45deg);"></div><iframe id="HW_frame" src="./SO 18529274 - JSFiddle_files/jsfiddle.html" style="border: none; width: 100%; height: 400px; overflow: hidden; border-radius: 4px; position: relative; z-index: 900; transition: height 0.3s; background: rgb(255, 255, 255);"></iframe></div><iframe style="display: none;"></iframe></body></html>
